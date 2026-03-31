@@ -1,1 +1,22 @@
+:root {
+    --maroon: #800000;
+    --gold: #FFD700;
+}
 
+.bg-maroon { background-color: var(--maroon) !important; }
+.btn-maroon { background-color: var(--maroon); color: white; }
+.btn-maroon:hover { background-color: #600000; color: var(--gold); }
+
+#wrapper { overflow-x: hidden; }
+#sidebar-wrapper {
+    min-height: 100vh;
+    width: 250px;
+    transition: margin .25s ease-out;
+}
+
+#page-content-wrapper { min-width: 100vw; background: #f8f9fa; }
+.list-group-item.active { background-color: rgba(255, 255, 255, 0.1) !important; border: none; color: var(--gold) !important; }
+
+@media (min-width: 768px) {
+    #page-content-wrapper { min-width: 0; width: 100%; }
+}
